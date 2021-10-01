@@ -2,13 +2,53 @@
 <html lang="en">
 <head>
     <title>Innopolis-Кинотеатр</title>
-    <nav><a title="Университет Иннополис" href="https://innopolis.university"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IU_logo.svg" alt="Лого" width="156" height="39"></a><a href="1.html">+7(800) 355 12-56</a> <a href="2.html">kino@innopolis.ru</a> <a href="4.html">ул. Спортивная д. 1</a> <a href="6.html">Заказать звонок</a> <a href="3.html">SPEAKERS</a> <a href="5.html"> SPONSORS</a> <a href="7.html">PAST EVENTS</a> <a href="7.html">CONTACT</a>
+    <nav>
+        <ul>
+            <li><a title="Университет Иннополис" href="https://innopolis.university"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IU_logo.svg" alt="Лого" width="156" height="39"></a></li>
+            <li><a href="1.html">+7(800) 355 12-56</a></li>
+            <li><a href="2.html">kino@innopolis.ru</a></li>
+            <li><a href="3.html">SPEAKERS</a></li>
+            <li><a href="4.html">ул. Спортивная д. 1</a></li>
+            <li><a href="5.html"> SPONSORS</a></li>
+            <li><a href="6.html">Заказать звонок</a></li>
+            <li><a href="7.html">PAST EVENTS</a></li>
+            <li><a href="8.html">CONTACT</a></li>
+        </ul>
     </nav>
-    <base target="_blank">
 </head>
-
+<style>
+    td {
+        border: 1px solid #000;
+        padding: 20px;
+    }
+    table {
+        border-spacing: collapse;
+        background: #373737;
+        border-radius: 10px;
+    }
+    th {
+        border: 1px solid #000;
+        text-align: left;
+        font-weight: 400;
+        padding: 20px;
+    }
+    input {
+        background: #DEDEDE;
+    }
+    textarea {
+        resize: none;
+        width: 344px;
+        height: 120px;
+        top: 5601px;
+        left: 555px;
+    }
+    ::-webkit-input-placeholder {
+        color: #a1a1a1;
+    }
+</style>
 <body>
     <div><b>Всем покупателям подарок!</b></div>
+    <p id="top"></p>
     <section><h1><b>Добро пожаловать!</b></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt.</p>
@@ -32,38 +72,45 @@
         <h3><b>Поцелуи на заднем ряду</b></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
     </section>
-    <section><div><h1><strong>Выберите фильм</strong></h1></div>
-            <table border="3">
-                <tr>
-                    <th> </th>
-                    <th>Начало сеанса</th>
-                    <th>Название фильма</th>
-                    <th>Жанр</th>
-                </tr>
+    <section>
+        <div>
+        <table style="border: 1px solid" cellpadding="3" cellspacing="3";>
+            <caption><h1><strong>Выберите фильм</strong><h1></caption>
+                <thead>
+                    <tr style="border-radius: 10px 0 0 0">
+                        <th> </th>
+                        <th>Начало сеанса</th>
+                        <th>Название фильма</th>
+                        <th>Жанр</th>
+                    </tr>
                     <tr>
-                    <td>✓</td>
-                    <td>10:00</td>
-                    <td>Человек-паук</td>
-                    <td>Фантастика, боевик, приключения</td>
-                </tr>
-                <tr>
-                    <td>✓</td>
-                    <td>12:00</td>
-                    <td>Собачья жизнь 2</td>
-                    <td>Фэнтези, драма, комедия</td>
-                </tr>
-                <tr>
-                    <td>✓</td>
-                    <td>14:00</td>
-                    <td>История игрушек 4</td>
-                    <td>Мульфильм, фэнтези, комедия</td>
-                <tr>
-                    <td>✓</td>
-                    <td>16:00</td>
-                    <td>Люди в черном: Интэрнэшнл</td>
-                    <td>Фантастика, боевик, комедия</td>
-                </tr>
+                        <td>✓</td>
+                        <td>10:00</td>
+                        <td>Человек-паук</td>
+                        <td>Фантастика, боевик, приключения</td>
+                    </tr>
+                    <tr>
+                        <td>✓</td>
+                        <td>12:00</td>
+                        <td>Собачья жизнь 2</td>
+                        <td>Фэнтези, драма, комедия</td>
+                    </tr>
+                    <tr>
+                        <td>✓</td>
+                        <td>14:00</td>
+                        <td>История игрушек 4</td>
+                        <td>Мульфильм, фэнтези, комедия</td>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>✓</td>
+                        <td>16:00</td>
+                        <td>Люди в черном: Интэрнэшнл</td>
+                        <td>Фантастика, боевик, комедия</td>
+                    </tr>
+                </tfoot>
         </table>
+        </div>
     </section>
     <section>
     <img src="Image/Подарок.jpg" alt="Подарок" width="302" height="303">
@@ -114,8 +161,41 @@
         </div>
     </section>
     <div><img src="Image/Карта.jpg" alt="Карта Иннополис" width="973.81" height="421"></div>
-    <div><span>Обратная связь</span></div>
-        <p><input type="button" value="Послать"></p>
+    <div><span><b>Обратная связь</b></span></div>
+        <form action="/order">
+            <div>
+                <input type="name" placeholder="Полное имя" required>
+            </div>
+            <div>
+                <input type="email" placeholder="Электронный адрес" required>
+            </div>
+            <div>
+                <b>Номер места</b>
+                <select name="Номер места" aria-placeholder="Номер места" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            <div>
+                <p>Загрузите ваши фотографии</p>
+                <input type="file" multiple="multiple" required>
+            </div>
+            <div>
+                <textarea name="" id="" placeholder="Напишите свой отзыв"></textarea>
+            </div>
+            <div>
+                <p><input type="checkbox" value="Я согласен на обработку своих персональных данных" required>Я согласен на обработку своих персональных данных</p>
+            </div>
+            <input type="submit" value="Заказать">
+        </form>
+    <p><a href="#top">Наверх</a></p>
     <footer>
         <nav><a title="Университет Иннополис" href="https://innopolis.university"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/IU_logo.svg" alt="Лого" width="161" height="41"></a><p>Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor<br>incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam<br></p>
         <p align="center"><a href="8.html"><b>SITE</b></a></p>
