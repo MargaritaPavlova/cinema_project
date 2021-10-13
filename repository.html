@@ -1,0 +1,389 @@
+<style>
+
+
+
+.block01__header{
+
+}
+.block01__row{
+    margin: 0 -15px;
+}
+.block01__col1{
+    float: left;
+    width: 21%;
+    padding: 0 22px 0 15px;
+}
+.block01__col2{
+    float: left;
+    width: 79%;
+    padding: 0 15px 0 22px;
+}
+
+.block01__ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+.block02__inner{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 50%;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body{
+    font-family: 'IBM-Plex-Sans', sans-serif;
+    width: 1171px;
+    height: 728px;
+}
+li{
+    text-decoration: none;
+}
+input {
+    background: #DEDEDE;
+}
+table {
+    border-collapse: collapse;
+    width: 849px;
+    left: 138px;
+    top: 1838px;
+    margin-bottom: 50px;
+}
+textarea {
+    resize: none;
+    width: 344px;
+    height: 120px;
+    top: 5601px;
+    left: 555px;
+}
+::-webkit-input-placeholder {
+    color: #a1a1a1;
+}
+.col {
+    float: left;
+    box-sizing: border-box;
+    width: 33.33%;
+    padding: 0 15px;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+    overflow: hidden;
+}
+.block01__lng-wrap{
+    position: relative;
+    display: inline-block;
+}
+.block01__lng{
+    color:#FFFFFF;
+    font-size: 12px;
+}
+.container {
+    padding: 0 15px;
+    width: 1124px;
+}
+.movie-table {
+    font-family: 'IBM-Plex-Sans', sans-serif;
+    border-collapse: collapse;
+    border-radius: 10px 10px 0 0;
+    border-spacing: 0;
+    width: 849px;
+    height: 225px;
+    left: 138px;
+    text-align: left;
+}
+.movie-table__row_green {
+    font-family: 'IBM-Plex-Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    width: 849px;
+    height: 45px;
+    left: 138px;
+    background: #a3cc40;
+}
+.movie-table__row-cell-deep-gray {
+    font-family: 'IBM-Plex-Sans';
+    font-weight: 400;
+    size: 14px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    width: 849px;
+    height: 45px;
+    left: 138px;
+    background: #373737;
+}
+.movie-table__row-cell-gray {
+    font-weight: 400;
+    size: 14px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    width: 849px;
+    height: 45px;
+    left: 138px;
+    background: #4C4D4F;
+}
+.movie-table__caption {
+    font-family: 'IBM-Plex-Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62,4px;
+    color: #a3cc40;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+h3 {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.description {
+    color: blue;
+}
+.emphasized-description {
+    text-decoration: underline;
+    /* color: red; */
+}
+#thought {
+    color: yellow;
+}
+#idea {
+    text-decoration: underline;
+}
+#mistake {
+    text-decoration: line-through;
+    color: red;
+}
+/** This is not good */
+/* p.description {
+    color: cyan;
+} */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+.form-input {
+    border: 1px solid black;
+}
+.form-input.error {
+    border: 1px solid red;
+}
+.menu li a {
+    text-transform: uppercase;
+}
+.menu2 > li a {
+    text-transform: uppercase;
+}
+h3 +  .description {
+    color: green;
+}
+/** Вот так тоже попробуйте, почему не сработало?*/
+/* h3 +  p {
+    color: green;
+} */
+h2 ~ .description {
+    color: orange;
+}
+/** рекомендуется размещать каждый селектор на строчке*/
+/* h2,
+h3 {
+    text-transform: lowercase;
+} */
+a[data-customer] {
+    font-weight: bolder;
+}
+/* Равен */
+/* a[data-customer="antilopa"] {
+    color: orange;
+} */
+/* Содержит слово */
+/* a[data-customer~="ostap"] {
+    color: orange;
+} */
+/* Содержит сочетание */
+/* a[data-customer*="ko"] {
+    color: orange;
+} */
+/*Начинается*/
+/* a[data-customer^="ostap"] {
+    color: orange;
+}  */
+/* Заканчивается */
+/* a[data-customer$="ostap"] {
+    color: orange;
+} */
+input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: yellow;
+  }
+
+  input[type="button"] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+input[type="button"] {
+    background-color: cyan;
+}
+  .button[type="textarea"] {
+    border: 1px solid blue;
+  }
+
+  .button[data-foo="bazz"] {
+    border: 1px solid green;
+  }
+</style>
+  43  2.7/selectors.html 
+@@ -78,13 +78,35 @@ <h2>И этот тоже</h2>
+    </div>
+
+    <!-- Разделяйте слова в называниях классов с помощью тире-->
+
+    <!-- Не называйте опираясь на презентационные свойства элемента-->
+    <!-- 
+        <style>
+            /** вот так не рекомендуется  - но часто встречается */
+            .red {
+                background: red;
+            }
+        </style>
+        <p class="red"></p>
+    -->
+
+    <!-- Найдите ошибку в строке 35-->
+    <!-- @see https://google.github.io/styleguide/htmlcssguide.html#CSS_Style_Rules-->
+
+
+    <!--НЕ смешивайте селекторы типа и селекторы классов-->
+    <!-- Возможно использовать для стилевых модификаторов -->
+    <!-- 
+        <style>
+            /** вот так не рекомендуется */
+            p.some {
+                ........
+            }
+        </style>
+        <p class="some"></p>
+    -->
+
+
+    <!-- Пример стилевых модификаторов, в данном случае error-->
+    <!-- @see 23 in main.css-->
+    <input type="text" class="form-input" />
+    <input type="text" class="form-input error" />
+@@ -103,8 +125,8 @@ <h2>И этот тоже</h2>
+    </ul>
+
+    <!-- Уровень вложенности не имеет значения-->
+    <div>
+        <ul class="menu">
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#">Ссылка меню 1 DIV</a>
+            </li>
+@@ -123,7 +145,7 @@ <h2>И этот тоже</h2>
+        </li>
+    </ul>
+
+    <!-- Дочерний селектор -->
+    <!-- Дочерний селектор  сработает только если menu2 класс перенести в ul -->
+    <div class="menu2">
+        <ul>
+            <li>
+@@ -162,12 +184,15 @@ <h3>А перед этим текстом тоже есть заголовок</
+        </p>
+
+        <!-- @see 52 of css-->
+        <p class="description">
+                Сестринский, но h3 + .description не сработает, потому что сверху
+        </p>
+        <h3>А перед этим текстом есть заголовок</h3>
+        <p class="description">
+            На странице может быть несколько классов с одним и тем же классом
+            Сестринский h3 + .description
+        </p>
+        <p class="description">
+            тот текст будет как обычный class=description
+            этот текст будет как обычный class=description, потому что он не сестринский для h3
+        </p>
+
+        <h3>А перед этим текстом тоже есть заголовок</h3>
+@@ -178,7 +203,7 @@ <h3>А перед этим текстом тоже есть заголовок</
+        </div>
+    </div>
+
+    <!-- Общий селектор смежных элементов-->
+    <!-- Общий селектор смежных элементов ~-->
+    <div>
+        <h2>А перед этим текстом есть заголовок</h2>
+        <p class="description">
+@@ -200,6 +225,8 @@ <h3>Отзывы наших клиентов</h3>
+    </div>
+
+    <input type="text">
+    <input type="button">
+    <input type="button" value="Кнопка">
+    <input class="button" type="textarea">
+    <input class="button" data-foo="bazz">
+</body>
+</html>
