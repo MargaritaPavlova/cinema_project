@@ -41,12 +41,11 @@ body {
 }
 .container {
     padding: 0 15px;
-    max-width: 961px;
+    max-width: 43.5rem;
     margin: 0 auto;
 }
 .container_wide {
-    padding: 0 15px;
-    max-width: 753px;
+    max-width: 52.5rem;
 }
 .block01 {
     min-height: 100vh;
@@ -66,18 +65,14 @@ body {
     height: 0;
 }
 .block01__row {
-    margin: 0 -15px;
+    margin: 0 -0.75px;
 }
-.block01__col1 {
-    float: left;
-    width: 21%;
-    padding: 0 22px 0 15px;
-}
+.block01__col1,
 .block01__col2 {
     float: left;
-    width: 79%;
-    padding: 0 15px 0 22px;
+    padding: 0 .75rem;
 }
+
 .block01__tel,
 .block01__mail,
 .block01__address {
@@ -86,24 +81,27 @@ body {
     font-size: 12px;
     font-weight: 500;
     vertical-align: top;
+    line-height: 2.4;
+    margin-left: 2.5rem;
 }
-/*  .link-white {
-        transition 0.2s;
-        border-bottom: 1px solid transparent;
-    }
-    .link-white:hover {
-        color: #a3cc40;
-        border-color: #a3cc40;
-    }
-    .link-white_big {
-        text-transform: uppercase;
-    } -- затем добавить в список <a class="link-white link-white_big" href="#">EVENT DETAILS</a></li> для всех элементов списка
-*/
-.block01__tel,
-.block01__mail,
-.block01__address {
-    margin-right: 30px;
+.link-white {
+    color: #ffffff;
+    transition: 0.2s;
 }
+
+.link-white:hover {
+    color: #a3cc40;
+}
+
+.link-white_big {
+    text-transform: uppercase;
+}
+/*-- затем добавить в список <a class="link-white link-white_big" href="#">EVENT DETAILS</a></li> для всех элементов списка*/
+/*.block01__tel,*/
+/*.block01__mail,*/
+/*.block01__address {*/
+/*    margin-right: 30px;*/
+/*}*/
 .block01__call {
     background: #fff;
     padding: 0 9px 4px;
@@ -167,22 +165,23 @@ body {
     opacity: 1;
 }
 .block01__lng-wrap:hover .block01__svg {
-    transform: rotate(180 degree);
+    transform: rotate(180deg);
 }
 .block01__ul li{ /* когда будет link-white, сделать так <a class="link-white" href="#">EVENT DETAILS</a></li> для всех элементов списка*/
     display: inline-block;
     margin-right: 40px;
+    font-size: 12px;
 }
 .block01__h1 {
     font-size: 68px;
-    line-height: 1,3;
+    line-height: 1.3;
     font-weight: 100;
     color: #FFFFFF;
     margin: 131px 245px 19px; /*правильно?*/
 }
 .block01__h2 {
     font-size: 41px;
-    line-height: 1,3;
+    line-height: 1.3;
     font-weight: 400;
     color: #FFFFFF;
     margin: 19px 313px 141px; /*??*/
@@ -191,10 +190,9 @@ body {
     margin: 157px 140px 144px; /*??*/
 }
 .block02__inner {
-    background: #fff;
     padding: 30px 47px 30px;
     background: #FFFFFF;
-    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+    box-shadow: 0 27px 39px rgba(163, 204, 64, 0.18);
     border-radius: 10px;
     position: absolute;
     max-width: 50%;
