@@ -29,6 +29,40 @@
     font-weight: 600;
 }
 
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    font-family: 'IBMPlexSans', sans-serif;
+    font-size: 20px;
+    color: #242424;
+    box-sizing: border-box;
+    text-decoration: none;
+    height: 100%;
+}
+.header {
+    font-size: 48px;
+    font-weight: 500;
+    color: #A3CC40;
+}
+.container {
+    padding: 0 15px;
+    max-width: 850px;
+    margin: 0 auto;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container_wide {
+    max-width: 1124px;
+}
+.container_small {
+    max-width: 767px;
+}
+
 .block01 {
     min-height: 100vh;
     background-image: url('../image/Backgroound_Picture.jpg');
@@ -42,7 +76,7 @@
 .block01::after {
     content: '';
     position: absolute;
-    border-bottom: 120px solid #FFFFFF;
+    border-bottom: 125px solid #FFFFFF;
     border-left: 100vw solid transparent;
     bottom: 0;
     left: 0;
@@ -82,6 +116,7 @@
 }
 .link-white:hover {
     color: #a3cc40;
+    border-bottom: 1px solid #a3cc40;
 }
 .block01__mail {
     text-decoration: underline;
@@ -186,26 +221,44 @@
     font-weight: 400;
 }
 .block02 {
-    padding: 4rem; /***/
+    padding: 46px 0 188px;
 }
-
-.block02__header {
-    margin-bottom: 84px;
-}
-
 .block02__inner {
     position: relative;
 }
 .block02__welcome {
     position: absolute;
-    top: -160px;
-    width: 50%;
+    top: -250px;
+    width: 426px;
     padding: 24px 32px;
     right: 0;
     background: #FFFFFF;
     box-shadow: 0 27px 39px rgba(163, 204, 64, 0.18);
     border-radius: 10px;
 }
+
+.block02__welcome-title {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 1.3;
+    color: #333333;
+    margin-bottom: 22px;
+}
+
+.block02__welcome-text {
+    font-size: 11px;
+    line-height: 1.3;
+    color: #333333;
+}
+
+.text-one {
+    margin-bottom: 18px;
+}
+
+.block02__header {
+    padding-bottom: 84px;
+}
+
 .block02__col {
     float: left;
     box-sizing: border-box;
@@ -213,14 +266,21 @@
     padding: 0 15px;
 }
 .block02__row {
+    margin-top: 84px;
     margin-left: -15px;
     margin-right: -15px;
 }
+
 .block02__image {
     width: 245px;
     height: 169px;
     margin-bottom: 35px;
 }
+
+.block02__image:hover {
+    transform: scale(1.07);
+}
+
 .block02__col-text {
     font-weight: 400;
     font-size: 11px;
@@ -240,6 +300,10 @@
 
 .block02__cell {
     margin-bottom: 29px;
+}
+
+.block03 {
+    padding: 40px 0 48px;
 }
 
 .block03__header {
@@ -282,11 +346,14 @@
 .block03__table tr:nth-child(2n) {
     background: #373737;
 }
-.block03__disclaimer {
-    size: 11px;
-    line-height: 1.3;
+
+.block03__text {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
     text-align: center;
     color: #333333;
+    margin-top: 30px;
 }
 
 .block04 {
@@ -298,10 +365,6 @@
     position: relative;
 }
 
-.block04__bg {
-    background: rgba(0, 0, 0, .8);
-}
-
 .block04::before {
     content: '';
     position: absolute;
@@ -310,27 +373,32 @@
     height: 0;
 }
 
-.block04::after {
+.block04__bg {
+    background: rgba(0, 0, 0, .8);
+}
+
+.block04__bg::after {
     content: '';
     display: block;
     border-bottom: 96px solid #FFFFFF;
     border-left: 100vw solid transparent;
 }
 
-.block04__gift {
+.block04__inner {
     position: relative;
 }
 
-.block04__image {
+.block04__logo {
     position: absolute;
     border-radius: 100%;
     overflow: hidden;
     left: 0;
     top: 0;
+    box-shadow: 8px 8px 8px #000;
 }
 
 .block04__giftforeverybody {
-    width: 70%; /* как вычислили эту величину? почему нельзя поставить 1171px */
+    width: 69%;
     margin-left: auto;
     padding: 132px 0 141px;
     text-align: right;
@@ -355,7 +423,6 @@
 }
 
 .block04_getgift {
-    display: inline-block;
     background: #a3cc40;
     color: #ffffff;
     padding: 7px 17.08px 6px 18px;
@@ -434,7 +501,24 @@
 }
 
 .block05__movie:hover .block05__descr {
-    transform: translateY(0);
+    animation: slideUp;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+    30% {
+        transform: translateY(100%);
+    }
+    50% {
+        transform: translateY(20%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .block06 {
@@ -542,7 +626,7 @@
     align-items: center;
     width: 100%;
 }
-.block07__item { /* непонятно, как это так получилось */
+.block07__item { /* необходимо объяснение */
     position: relative;
     border-radius: 9px;
     overflow: hidden;
@@ -576,22 +660,24 @@
     margin: 10px;
 }
 
+.block08 {
+    margin: auto;
+}
+
 .block08__feedback {
-    margin-top: 43px;
-    height: 527px;
+    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
+    border-radius: 20px;
     display: flex;
     overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
 }
 
 .block08__col1 {
-    background: url(../image/Обратная_связь.jpg);
+    background: url("../image/Обратная_связь.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    flex: 0 0 58%; /*??*/
+    flex: 0 0 58%;
 }
 .block08__image {
     position: absolute;
@@ -603,8 +689,9 @@
 }
 
 .block08__col2 {
-    padding: 38px 42px 33px 0;
+    padding: 0 32px 32px 0;
     flex: 0 0 42%;
+    display:inline-block;
 }
 
 .block08__header {
@@ -612,10 +699,24 @@
     font-size: 25px;
     line-height: 1.3;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .block08__form-action {
     margin: 20px 42px 33px 0;
+}
+
+#fullname {
+    font-family:inherit;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #A1A1A1;
+    padding: 13px 16px;
+    border: 0;
+    background-color: #DEDEDE;
+    border-radius: 5px;
+    width: 100%;
+    transition: .2s;
 }
 
 .block08__place {
@@ -630,19 +731,6 @@
     background: #DEDEDE;
     border-radius: 5px;
     border: 0;
-}
-
-input, textarea {
-    font-family:inherit;
-    font-size: 15px;
-    line-height: 1.3;
-    color: #A1A1A1;
-    padding: 13px 16px;
-    border: 0;
-    background-color: #DEDEDE;
-    border-radius: 5px;
-    width: 100%;
-    transition: .2s;
 }
 
 .block08__submission {
@@ -708,8 +796,8 @@ textarea {
     background: #DEDEDE;
     border-radius: 5px;
     border:0;
-    height:120px;
-  }
+    height:120px; /* NOT ALLOWED */
+}
 
 .block08_button {
     width: 344px;
@@ -728,15 +816,14 @@ textarea {
     display: inline-block;
 }
 
+.block09 img {
+    display: block;
+    margin: 0 auto;
+}
+
 .footer {
     background-color: #A3CC40;
     padding: 3rem 0 0 0;
-}
-
-.footer__col1,
-.footer__col2 {
-    float: left;
-    width: 33.33%;
 }
 
 .footer__text1 {
@@ -745,6 +832,24 @@ textarea {
     color: #FFFFFF;
     margin: 20px 0 26px;
 }
+
+.footer__media {
+    display: inline-block;
+}
+
+.footer__media a {
+    padding: 30px;
+    transition: all .5s ease;
+}
+
+.footer__media svg:hover {
+    transition: .4s;
+    border-radius: 100%;
+    opacity: 0.7;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .8);
+    stroke: white;
+}
+
 
 
 
