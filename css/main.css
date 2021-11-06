@@ -28,25 +28,7 @@
     font-style: normal;
     font-weight: 600;
 }
-html {
-    font-size: 20px;
-}
-body {
-    font-family: 'IBMPlexSans', sans-serif;
-}
-.header {
-    font-size: 48px;
-    font-weight: 500;
-    color: #A3CC40;
-}
-.container {
-    padding: 0 15px;
-    max-width: 43.5rem;
-    margin: 0 auto;
-}
-.container_wide {
-    max-width: 52.5rem;
-}
+
 .block01 {
     min-height: 100vh;
     background-image: url('../image/Backgroound_Picture.jpg');
@@ -54,60 +36,66 @@ body {
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    position: relative;
 }
+
 .block01::after {
     content: '';
     position: absolute;
-    border-bottom: 52px solid #FFFFFF; /*почему 52?*/
+    border-bottom: 120px solid #FFFFFF;
     border-left: 100vw solid transparent;
     bottom: 0;
     left: 0;
     height: 0;
 }
+
+.block01__header {
+    padding: 32px 0 0;
+}
+
 .block01__row {
     margin: 0 -0.75px;
 }
 .block01__col1,
 .block01__col2 {
     float: left;
-    padding: 0 .75rem;
 }
-
+.block01__col1 {
+    width: 21%;
+    padding: 0 22px 0 15px;
+}
+.block01__col2 {
+    width: 79%;
+}
 .block01__tel,
 .block01__mail,
 .block01__address {
     display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
     color: #fff;
     font-size: 12px;
-    font-weight: 500;
-    vertical-align: top;
-    line-height: 2.4;
-    margin-left: 2.5rem;
+    line-height: 1.3;
 }
 .link-white {
-    color: #ffffff;
     transition: 0.2s;
 }
-
 .link-white:hover {
     color: #a3cc40;
 }
-
-.link-white_big {
-    text-transform: uppercase;
+.block01__mail {
+    text-decoration: underline;
 }
-/*-- затем добавить в список <a class="link-white link-white_big" href="#">EVENT DETAILS</a></li> для всех элементов списка*/
-/*.block01__tel,*/
-/*.block01__mail,*/
-/*.block01__address {*/
-/*    margin-right: 30px;*/
-/*}*/
+.block01__mail,
+.block01__address,
+.block01__call {
+    margin-left: 40px;
+}
 .block01__call {
     background: #fff;
     padding: 0 9px 4px;
     border-radius: 6px;
     border: 2px solid #fff;
-    transition: 0.2s;
 }
 .block01__call span {
     color: #333;
@@ -124,15 +112,9 @@ body {
 .block01__call:hover svg {
     fill: #fff;
 }
-.block01__call:hover svg {
-    color:#fff;
-}
 .block01__lng-wrap {
     position: relative;
-    display: inline-block;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 500;
+    float: right;
 }
 .block01__lng {
     color:#fff;
@@ -167,48 +149,616 @@ body {
 .block01__lng-wrap:hover .block01__svg {
     transform: rotate(180deg);
 }
-.block01__ul li{ /* когда будет link-white, сделать так <a class="link-white" href="#">EVENT DETAILS</a></li> для всех элементов списка*/
+.block01__nav {
+    padding: 14px 0 0;
+}
+.block01__ul li{
     display: inline-block;
-    margin-right: 40px;
+}
+.block01__ul :not(:first-child) {
+    margin-left: 56px;
+}
+.block01__ul li a {
+    font-weight: 500;
     font-size: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    display: block;
+    transition: .2s;
+}
+.block01__main {
+    padding: 160px 0 200px 0;
+}
+.block01__h1,
+.block01__h2 {
+    color: #FFFFFF;
+    line-height: 1.3;
+    text-align: center;
 }
 .block01__h1 {
-    font-size: 68px;
-    line-height: 1.3;
+    font-size: 68px; 
     font-weight: 100;
-    color: #FFFFFF;
-    margin: 131px 245px 19px; /*правильно?*/
+    margin-bottom: 19px;
 }
 .block01__h2 {
     font-size: 41px;
-    line-height: 1.3;
     font-weight: 400;
-    color: #FFFFFF;
-    margin: 19px 313px 141px; /*??*/
 }
 .block02 {
-    margin: 157px 140px 144px; /*??*/
+    padding: 4rem; /***/
 }
+
+.block02__header {
+    margin-bottom: 84px;
+}
+
 .block02__inner {
-    padding: 30px 47px 30px;
+    position: relative;
+}
+.block02__welcome {
+    position: absolute;
+    top: -160px;
+    width: 50%;
+    padding: 24px 32px;
+    right: 0;
     background: #FFFFFF;
     box-shadow: 0 27px 39px rgba(163, 204, 64, 0.18);
     border-radius: 10px;
-    position: absolute;
-    max-width: 50%;
-    right: 135px;
-    top: 564px;
-    transform: translateY(-50%);
 }
-.block02__welcome {
-    font-size: 33px;
-    font-weight: 600;
+.block02__col {
+    float: left;
+    box-sizing: border-box;
+    width: 33.33%;
+    padding: 0 15px;
+}
+.block02__row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.block02__image {
+    width: 245px;
+    height: 169px;
+    margin-bottom: 35px;
+}
+.block02__col-text {
+    font-weight: 400;
+    font-size: 11px;
     color: #333333;
-    margin: 33px 47px 22px;
+    line-height: 1.3;
+    text-align: center;
 }
-.block02__header {
-    margin-top: 32px; /*??*/
+
+.block02__col-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.3;
+    margin-bottom: 25px;
+    text-align: center;
 }
+
+.block02__cell {
+    margin-bottom: 29px;
+}
+
+.block03__header {
+    margin-bottom: 84px;
+}
+
+.block03__table {
+    border-spacing: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.block03__table th {
+    text-align: left;
+    padding: 9px 0px 10px 0;
+    background: #a3cc40;
+}
+.block03__table th a {
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: block;
+    white-space: nowrap;
+}
+.block03__table th svg {
+    vertical-align: middle;
+}
+.block03__table td {
+    padding: 12px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.block03__table td:nth-child(1) {
+    padding: .6rem 1rem;
+}
+.block03__table tr {
+    background: #4C4D4F;
+}
+.block03__table tr:nth-child(2n) {
+    background: #373737;
+}
+.block03__disclaimer {
+    size: 11px;
+    line-height: 1.3;
+    text-align: center;
+    color: #333333;
+}
+
+.block04 {
+    background-image: url('../image/Подарок_каждому.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.block04__bg {
+    background: rgba(0, 0, 0, .8);
+}
+
+.block04::before {
+    content: '';
+    position: absolute;
+    border-top: 120px solid #FFFFFF;
+    border-right: 100vw solid transparent;
+    height: 0;
+}
+
+.block04::after {
+    content: '';
+    display: block;
+    border-bottom: 96px solid #FFFFFF;
+    border-left: 100vw solid transparent;
+}
+
+.block04__gift {
+    position: relative;
+}
+
+.block04__image {
+    position: absolute;
+    border-radius: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+}
+
+.block04__giftforeverybody {
+    width: 70%; /* как вычислили эту величину? почему нельзя поставить 1171px */
+    margin-left: auto;
+    padding: 132px 0 141px;
+    text-align: right;
+}
+
+.block04__header {
+    color: #ffffff;
+    margin: 0 0 38px;
+    text-align: right;
+}
+
+.block04__text {
+    font-size: 11px;
+    line-height: 1.3;
+    color: #fff;
+    margin-bottom: 33px;
+}
+
+.text_01,
+.text_02 {
+    margin-bottom: 18px;
+}
+
+.block04_getgift {
+    display: inline-block;
+    background: #a3cc40;
+    color: #ffffff;
+    padding: 7px 17.08px 6px 18px;
+    margin: 26px 0 0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: .2s;
+    border: 1px solid #a3cc40;
+    cursor: pointer;
+}
+
+.block05__header {
+    margin: 70px 0 27px;
+}
+
+.block05__text1 {
+    margin: 27px 0 64px;
+    font-size: 11px;
+    line-height: 1.3;
+}
+
+.block05__inner {
+    overflow: hidden;
+}
+
+.block05__movie {
+    float: left;
+    width: 33.3%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.block05__shadow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(22,22,22, 0.8);
+    transition: 0.3s;
+}
+
+.block05__descr {
+    background: rgba(144, 210, 61, 0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 22px;
+    transform: translateY(100%);
+}
+
+.block05__film-title {
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.block05__text2 {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.3;
+    color: #FFFFFF;
+}
+
+.block05__bg img {
+    width: 100%;
+    display: block;
+}
+
+.block05__movie:hover .block05__shadow {
+    opacity: 0;
+}
+
+.block05__movie:hover .block05__descr {
+    transform: translateY(0);
+}
+
+.block06 {
+    padding: 0 0 27px;
+}
+.block06__header {
+    margin: 79px 0 27px;
+}
+
+.block06__text1 {
+    font-size: 11px;
+    line-height: 1.3;
+    margin-bottom: 57px;
+}
+
+.block06__list {
+    display: flex;
+    justify-content: space-between;
+}
+.block06__item {
+    position: relative;
+    border-radius: 10px;
+    width: 245px;
+    overflow: hidden;
+}
+
+.block06__item img {
+    display: block;
+}
+
+.block06__abs {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    color: #FFFFFF;
+    height: 88px;
+    display: flex;
+    padding: 0 22px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    background: rgba(163, 204, 64, 0.8);
+}
+
+.block06__abs:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 245px solid rgba(163, 204, 64, 0.8);
+    border-top: 64px solid transparent;
+    transform: translateY(-100%);
+}
+.block07 {
+    background-image: url(../image/Отзывы_бэк.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.block07::before {
+    content: '';
+    position: absolute;
+    border-top: 85px solid #FFFFFF;
+    border-right: 100vw solid transparent;
+    top: 0;
+    left: 0;
+    height: 0;
+}
+
+.block07:after {
+    content: '';
+    position: absolute;
+    border-bottom: 85px solid #ffffff;
+    border-left: 100vw solid transparent;
+    bottom: 0;
+    left: 0;
+    height: 0;
+}
+
+.block07__bg {
+    background: rgba(0, 0, 0, .8);
+    padding: 138px 0;
+}
+
+.block07__header {
+    margin-bottom: 26px;
+}
+
+.block07__text1 {
+    font-size: 11px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    margin-bottom: 75px;
+}
+
+.block07__reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.block07__item { /* непонятно, как это так получилось */
+    position: relative;
+    border-radius: 9px;
+    overflow: hidden;
+    max-width: 210px;
+    background: #97B13C;
+    transition: .2s;
+    opacity: .8;
+    margin: 0 auto;
+}
+
+.block07__name {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    margin: 18px 0 14px;
+}
+.block07__quote {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    margin: 0 16px 19px 9px;
+}
+.block07__date {
+    font-weight: 300;
+    font-size: 8px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    text-align: right;
+    margin: 10px;
+}
+
+.block08__feedback {
+    margin-top: 43px;
+    height: 527px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
+}
+
+.block08__col1 {
+    background: url(../image/Обратная_связь.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex: 0 0 58%; /*??*/
+}
+.block08__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, #FFFFFF 12.2%, rgba(30, 30, 30, 0) 107.85%);
+}
+
+.block08__col2 {
+    padding: 38px 42px 33px 0;
+    flex: 0 0 42%;
+}
+
+.block08__header {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.block08__form-action {
+    margin: 20px 42px 33px 0;
+}
+
+.block08__place {
+    margin: 33px 0 30px;
+}
+
+.block08__select {
+    width: 100%;
+    padding:10px;
+    width: 344px;
+    height: 40px;
+    background: #DEDEDE;
+    border-radius: 5px;
+    border: 0;
+}
+
+input, textarea {
+    font-family:inherit;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #A1A1A1;
+    padding: 13px 16px;
+    border: 0;
+    background-color: #DEDEDE;
+    border-radius: 5px;
+    width: 100%;
+    transition: .2s;
+}
+
+.block08__submission {
+    position: relative;
+    margin-top: 27px;
+}
+
+.block08__label {
+    position: relative;
+    padding-left:30px;
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 1.3;
+    color: #333333;
+}
+
+.block08__label input[type=checkbox] {
+    position: relative;
+    width:0; 
+    height:0;
+}
+
+.block08__span {
+    position: absolute;
+    top:-3px;
+    left:0;
+    width: 18px;
+    height: 17px;
+    border: 1px solid #A3CC40;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-right: 6px;
+}
+
+.block08__span:after {
+    content: "";
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 4px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.block08__label:hover .block08__span {
+    background-color: #ccc;
+}
+
+.block08__label input:checked ~ .block08__span {
+    background-color: #2eaadc;
+}
+
+.block08__label input:checked ~ .block08__span:after {
+    display:block;
+}
+
+textarea {
+    width:100%;
+    resize: vertical;
+    padding:13px 16px;
+    background: #DEDEDE;
+    border-radius: 5px;
+    border:0;
+    height:120px;
+  }
+
+.block08_button {
+    width: 344px;
+    height: 57px;
+    background: #A3CC40;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 48px 42px 33px 0;
+    padding: 24px 0 18px;
+    display: inline-block;
+}
+
+.footer {
+    background-color: #A3CC40;
+    padding: 3rem 0 0 0;
+}
+
+.footer__col1,
+.footer__col2 {
+    float: left;
+    width: 33.33%;
+}
+
+.footer__text1 {
+    font-size: 14px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    margin: 20px 0 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

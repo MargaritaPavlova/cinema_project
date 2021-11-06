@@ -5,6 +5,7 @@
     <title>Учебный проект</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/common_styles.css">
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
@@ -86,8 +87,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu-block"></div>
-                    <div class="menu-wrap">
+                    <div class="menu-block">
                         <nav class="block01__nav">
                             <ul class="block01__ul">
                                 <li><a class="link-white link-white_big" href="#">EVENT DETAILS</a></li>
@@ -108,54 +108,58 @@
     </div>
 </div>
 <div class="block02">
-    <div class="container relative">
+    <div class="container">
         <div class="block02__inner">
-            <p class="block02__welcome">Добро пожаловать!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            <div class="block02__welcome">
+                <h2>Добро пожаловать!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 Excepteur sint occaecat cupidatat non proident, sunt.</p>
-        </div>
-        <div class="block02__why">
-            <p class="header block02__header">Почему мы?</p>
-            <div class="block02__col1">
-                <img src="image/Большие_экраны.jpg" alt="Большие экраны" width="245" height="169">
-                <p>Большие экраны
-                <p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <div class="block02__col2">
-                <img src="image/Объемный_звук.jpg" alt="Объемный звук" width="245" height="169">
-                <p>Объемный звук</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <div class="block02__col3">
-                <img src="image/Удобные_кресла.jpg" alt="Удобные кресла" width="245" height="169">
-                <p>Удобные кресла</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <div class="block02__col4">
-                <img src="image/Уютная_атмосфера.jpg" alt="Уютная атмосфера" width="245" height="169">
-                <p>Уютная атмосфера</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <div class="block02__col5">
-                <img src="image/Полное_погружение.jpg" alt="Поцелуи на заднем ряду" width="245" height="169">
-                <p>Полное погружение</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div>
-            <div class="block02__col6">
-                <img src="image/Поцелуи.jpg" alt="Поцелуи на заднем ряду" width="245" height="169">
-                <p>Поцелуи на заднем ряду</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
         </div>
+        <h2 class="header block02__header">Почему мы?</h>
+            <div class="block02__row">
+                <div class="block02__col">
+                    <div class="block02__cell">
+                        <img class="block02__image" src="image/Большие_экраны.jpg" alt="Большие экраны">
+                            <p class="block02__col-title">Большие экраны<p>
+                            <p class="block02__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="block02__cell">
+                        <img class="block02__image" src="image/Уютная_атмосфера.jpg" alt="Уютная атмосфера">
+                            <p class="block02__col-title">Уютная атмосфера</p>
+                            <p class="block02__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+                <div class="block02__col">
+                    <div class="block02__cell">
+                        <img class="block02__image" src="image/Объемный_звук.jpg" alt="Объемный звук">
+                            <p class="block02__col-title">Объемный звук</p>
+                            <p class="block02__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="block02__cell">
+                        <div class="block02__cell">
+                            <img class="block02__image" src="image/Полное_погружение.jpg" alt="Поцелуи на заднем ряду">
+                            <p class="block02__col-title">Полное погружение</p>
+                            <p class="block02__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block02__col">
+                    <div class="block02__cell">
+                        <img class="block02__image" src="image/Удобные_кресла.jpg" alt="Удобные кресла">
+                            <p class="block02__col-title">Удобные кресла</p>
+                            <p class="block02__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="block02__cell">
+                        <img class="block02__image" src="image/Поцелуи.jpg" alt="Поцелуи на заднем ряду">
+                            <p class="block02__col-title">Поцелуи на заднем ряду</p>
+                            <p class="block02__col-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+            </div>
+        </h2>
     </div>
 </div>
 <div class="block03">
@@ -255,33 +259,27 @@
                 </tbody>
             </table>
         </div>
-        <p class="block03__disclaimer">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim
-            exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!</p>
+        <p class="block03__disclaimer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
     </div>
 </div>
 <div class="block04">
     <div class="container">
         <div class="block04__gift">
-            <div class="block04__image"></div>
+            <div class="block04__image">
+                <img src="image/Подарок.jpg" alt="">
+            </div>
         </div>
-        <div class="block04__giftforeverybody">
-            <p class="header block04__header">Подарок каждому!</p>
-            <div class="block04__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar
-                    etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.</p>
-                <p>Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis
-                    imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam
-                    vestibulum morbi blandit cursus risus at ultrices mi tempus.</p>
-                <p>Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut
-                    pharetra sit amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium quam
-                    vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi cras
-                    fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla facilisi
-                    nullam vehicula ipsum.</p>
-                <button class="block04_getgift">
-                    <input type="button" value="Получить подарок">
-                </button>
+        <div class="block04__bg">
+            <div class="block04__giftforeverybody">
+                <p class="header block04__header">Подарок каждому!</p>
+                <div class="block04__text">
+                    <p class="block04__text text_01">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.</p>
+                    <p class="block04__text text_02">Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus.</p>
+                    <p class="block04__text">Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum.</p>
+                    <button class="block04_getgift">
+                        Получить подарок
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -289,193 +287,198 @@
 <div class="block05">
     <div class="container">
         <p class="header block05__header">Фильмы</p>
-        <p class="block05__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
-            elementum pulvinar etiam non quam.</p>
+        <p class="block05__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.</p>
         <div class="block05__inner">
-            <div class="block05__movie1">
+            <div class="block05__movie">
                 <div class="block05__bg">
-                    <img src="/image/Выживший.jpg" alt="Плакат фильма Выживший"><a title="Кинопоиск"
-                                                                                   href="https://www.kinopoisk.ru/film/522941"></a>
+                    <img src="image/Выживший.jpg" alt="Плакат фильма Выживший"><a title="Кинопоиск" href="https://www.kinopoisk.ru/film/522941"></a>
                 </div>
                 <div class="block05__shadow"></div>
                 <div class="block05__descr">
                     <div class="block05__film-title">Выживший</div>
-                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis
-                        at.Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
+                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                     </div>
                 </div>
-                <div class="block05__movie2">
-                    <div class="block05__bg">
-                        <img src="/image/Лед.jpg" alt="Плакат фильма Лед"><a title="Кинопоиск"
-                                                                             href="https://www.kinopoisk.ru/film/900052/"></a>
-                    </div>
-                    <div class="block05__shadow"></div>
-                    <div class="block05__descr">
-                        <div class="block05__film-title">Лед</div>
+            </div>
+            <div class="block05__movie">
+                <div class="block05__bg">
+                    <img src="image/Лед.jpg" alt="Плакат фильма Лед"><a title="Кинопоиск" href="https://www.kinopoisk.ru/film/900052/"></a>
+                </div>
+                <div class="block05__shadow"></div>
+                <div class="block05__descr">
+                    <div class="block05__film-title">Лед</div>
+                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                     </div>
                 </div>
-                <div class="block05__movie3">
-                    <div class="block05__bg">
-                        <img src="/image/Марсианин.jpg" alt="Плакат фильма Марсианин"><a title="Кинопоиск"
-                                                                                         href="https://www.kinopoisk.ru/film/841700/"></a>
-                    </div>
-                    <div class="block05__shadow"></div>
-                    <div class="block05__descr">
-                        <div class="block05__film-title">Марсианин</div>
+            </div>
+            <div class="block05__movie">
+                <div class="block05__bg">
+                    <img src="image/Марсианин.jpg" alt="Плакат фильма Марсианин"><a title="Кинопоиск" href="https://www.kinopoisk.ru/film/841700/"></a>
+                </div>
+                <div class="block05__shadow"></div>
+                <div class="block05__descr">
+                    <div class="block05__film-title">Марсианин</div>
+                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                     </div>
                 </div>
-                <div class="block05__movie4">
-                    <div class="block05__bg">
-                        <img src="/image/Акиньшина.jpg" alt="Плакат фильма Чернобыль"><a title="Кинопоиск"
-                                                                                         href="https://www.kinopoisk.ru/film/1249198/"></a>
-                    </div>
-                    <div class="block05__shadow"></div>
-                    <div class="block05__descr">
-                        <div class="block05__film-title">Чернобыль</div>
+            </div>
+            <div class="block05__movie">
+                <div class="block05__bg">
+                    <img src="/image/Чернобыль.jpg" alt="Плакат фильма Чернобыль"><a title="Кинопоиск" href="https://www.kinopoisk.ru/film/1249198/"></a>
+                </div>
+                <div class="block05__shadow"></div>
+                <div class="block05__descr">
+                    <div class="block05__film-title">Чернобыль</div>
+                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                     </div>
                 </div>
-                <div class="block05__movie5">
-                    <div class="block05__bg">
-                        <img src="image/Солдат.jpg" alt="Плакат фильма Калашников"><a title="Кинопоиск"
-                                                                                      href="https://www.kinopoisk.ru/film/1188248/"></a>
-                    </div>
-                    <div class="block05__shadow"></div>
-                    <div class="block05__descr">
-                        <div class="block05__film-title">Калашников</div>
+            </div>
+            <div class="block05__movie">
+                <div class="block05__bg">
+                    <img src="image/Калашников.jpg" alt="Плакат фильма Калашников"><a title="Кинопоиск" href="https://www.kinopoisk.ru/film/1188248/"></a>
+                </div>
+                <div class="block05__shadow"></div>
+                <div class="block05__descr">
+                    <div class="block05__film-title">Калашников</div>
+                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                     </div>
                 </div>
-                <div class="block05__movie6">
-                    <div class="block05__bg">
-                        <img src="image/Постер_фильма_Территория.jpg" alt="Плакат фильма Территория"><a
-                            title="Кинопоиск" href="https://www.kinopoisk.ru/film/601933/"></a>
-                    </div>
-                    <div class="block05__shadow"></div>
-                    <div class="block05__descr">
-                        <div class="block05__film-title">Территория</div>
+            </div>
+            <div class="block05__movie">
+                <div class="block05__bg">
+                    <img src="image/Территория.jpg" alt="Плакат фильма Территория"><a title="Кинопоиск" href="https://www.kinopoisk.ru/film/601933/"></a>
+                </div>
+                <div class="block05__shadow"></div>
+                <div class="block05__descr">
+                    <div class="block05__film-title">Территория</div>
+                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                     </div>
                 </div>
-                <div class="block05__movie7">
-                    <div class="block05__bg">
-                        <img src="/image/Dream_is_Real.jpg" alt="Плакат фильма Начало"><a title="Кинопоиск"
-                                                                                          href="https://www.kinopoisk.ru/film/447301/"></a>
-                    </div>
-                    <div class="block05__shadow"></div>
-                    <div class="block05__descr">
-                        <div class="block05__film-title">Начало</div>
+            </div>
+            <div class="block05__movie">
+                <div class="block05__bg">
+                    <img src="image/Начало.jpg" alt="Плакат фильма Начало"><a title="Кинопоиск" href="https://www.kinopoisk.ru/film/447301/"></a>
+                </div>
+                <div class="block05__shadow"></div>
+                <div class="block05__descr">
+                    <div class="block05__film-title">Начало</div>
+                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                     </div>
                 </div>
-                <div class="block05__movie8">
-                    <div class="block05__bg">
-                        <img src="/image/Poster.jpg" alt="Плакат фильма Лунный свет"><a title="Кинопоиск"
-                                                                                        href="https://www.kinopoisk.ru/film/939981/"></a>
-                    </div>
-                    <div class="block05__shadow"></div>
-                    <div class="block05__descr">
-                        <div class="block05__film-title">Лунный свет</div>
+            </div>
+            <div class="block05__movie">
+                <div class="block05__bg">
+                    <img src="image/Лунный свет.jpg" alt="Плакат фильма Лунный свет"><a title="Кинопоиск" href="https://www.kinopoisk.ru/film/939981/"></a>
+                </div>
+                <div class="block05__shadow"></div>
+                <div class="block05__descr">
+                    <div class="block05__film-title">Лунный свет</div>
+                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                     </div>
                 </div>
-                <div class="block05__movie9">
-                    <div class="block05__bg">
-                        <img src="/image/Живое.jpg" alt="Плакат фильма Живое"><a title="Кинопоиск"
-                                                                                 href="https://www.kinopoisk.ru/film/966995/"></a>
-                    </div>
-                    <div class="block05__shadow"></div>
-                    <div class="block05__descr">
-                        <div class="block05__film-title">Живое</div>
+            </div>
+            <div class="block05__movie">
+                <div class="block05__bg">
+                    <img src="image/Живое.jpg" alt="Плакат фильма Живое"><a title="Кинопоиск" href="https://www.kinopoisk.ru/film/966995/"></a>
+                </div>
+                <div class="block05__shadow"></div>
+                <div class="block05__descr">
+                    <div class="block05__film-title">Живое</div>
+                    <div class="block05__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="block06">
+</div>
+<div class="block06">
         <div class="container">
             <p class="header block06__header">Товары</p>
-            <p class="block06__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
-                elementum pulvinar etiam non quam.</p>
+            <p class="block06__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.</p>
             <div class="block06__list">
                 <div class="block06__item">
                     <img src="image/Кола.jpg" alt="Кола">
-                    <div class="block06__abs">
-                        Coca-Cola
+                    <div class="block06__abs">Coca-Cola
                     </div>
                 </div>
                 <div class="block06__item">
                     <img src="image/Брелок.jpg" alt="Брелок">
-                    <div class="block06__abs">
-                        Брелок "Железный человек"
+                    <div class="block06__abs">Брелок "Железный человек"
                     </div>
                 </div>
                 <div class="block06__item">
                     <img src="image/Постер_Мстители.jpg" alt="Постер Мстители">
-                    <div class="block06__abs">
-                        Постер "Мстители"
+                    <div class="block06__text2">
+                    <div class="block06__abs">Постер "Мстители"
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
-    <div class="block07">
+</div>
+<div class="block07">
+    <div class="block07__bg">
         <div class="container">
-            <p class="header block05__header">Отзывы</p>
-            <p class="block06__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam
-                elementum pulvinar etiam non quam.</p>
+            <p class="header block07__header">Отзывы</p>
+            <p class="block07__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam.</p>
             <div class="block07__reviews">
-                <div class="block07__text1">
+                <div class="block07__item">
                     <img src="image/Елена_Еленова.jpg" alt="Елена Еленова">
                     <div class="block07__quote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.</p>
+                        <div class="block07__name">Елена Еленова</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                     <div class="block07__date">13.12.2020</div>
                 </div>
                 <div class="block07__arrow1">
                     <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M0.781067 11.0384L11.3807 0.438721L13.2663 2.32434L4.5523 11.0384L13.2663 19.7524L11.3807 21.638L0.781067 11.0384Z"
+                                  d="M0.781067 11.0384L11.3807 0.438721L13.2663 2.32434L4.5523 11.0384L13.2663 19.7524L11.3807 21.638L0.781067 11.0384Z"
+                                  fill="#97B13C"/>
+                    </svg>
+                </div>
+                <div class="block07__item">
+                    <img src="image/Борис_Борисов.jpg" alt="Борис Борисов">
+                    <div class="block07__quote">
+                        <div class="block07__name">Борис Борисов</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="block07__date">13.12.2020</div>
+                </div>
+                <div class="block07__arrow2">
+                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M13.2191 11.0376L2.61946 0.437988L0.733838 2.32361L9.44788 11.0376L0.733838 19.7517L2.61946 21.6373L13.2191 11.0376Z"
                               fill="#97B13C"/>
                     </svg>
                 </div>
-                <div class="block07__text2"></div>
-                <img src="image/Борис_Борисов.jpg" alt="Борис Борисов">
-                <div class="block07__quote">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                <div class="block07__item">
+                    <img src="image/ДиКаприо.jpg" alt="Леонардо Ди Каприо">
+                    <div class="block07__quote">
+                        <div class="block07__name">Леонардо ДиКаприо</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="block07__date">13.12.2020</div>
                 </div>
-                <div class="block07__date">13.12.2020</div>
             </div>
-            <div class="block07__arrow2">
-                <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M13.2191 11.0376L2.61946 0.437988L0.733838 2.32361L9.44788 11.0376L0.733838 19.7517L2.61946 21.6373L13.2191 11.0376Z"
-                          fill="#97B13C"/>
-                </svg>
-            </div>
-            <div class="block07__text3"></div>
-            <img src="image/ДиКаприо.jpg" alt="Леонардо Ди Каприо">
-            <div class="block07__quote">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
-            </div>
-            <div class="block07__date">13.12.2020</div>
         </div>
     </div>
-</div>
 </div>
 <div class="block08">
     <div class="container">
         <div class="block08__feedback">
             <div class="block08__col1">
+                <div class="block08__image"></div>
+            </div>
+            <div class="block08__col2">
                 <p class="header block08__header">Обратная связь</p>
                 <div class="block08__form-action">
                     <div class="block08__fullname">
                         <input type="name" placeholder="Полное имя" required>
                     </div>
                     <div class="block08__place">
-                        <select name="Номер места" aria-placeholder="Номер места" required>
+                        <select class="block08__select" name="Номер места" aria-placeholder="Номер места" required>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -489,15 +492,17 @@
                         </select>
                     </div>
                     <div class="block08__reviewform">
-                        <textarea name="" id="" placeholder="Напишите свой отзыв"></textarea>
+                        <textarea name="Напишите свой отзыв" placeholder="Напишите свой отзыв"></textarea>
                     </div>
                     <div class="block08__submission">
-                        <p><input type="checkbox" value="Я согласен на обработку своих персональных данных">Я согласен
-                            на обработку своих персональных данных</p>
+                        <label class="block08__label">Я согласен на обработку своих персональных данных
+                            <input type="checkbox" class="block08__checkbox" id="block08__checkbox1" value="Я согласен на обработку своих персональных данных">
+                            <span class="block08__span"></span>
+                        </label>
                     </div>
-                    <div class="block08__button">
-                        <input type="submit" value="Послать">
-                    </div>
+                    <button class="block08_button">
+                        Послать
+                    </button>
                 </div>
             </div>
         </div>

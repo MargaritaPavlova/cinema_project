@@ -1,0 +1,29 @@
+input, textarea {
+    font-size: 19px;
+    color: red;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+display: none;
+}
+
+
+input[type="button"]:hover,
+button:active {
+border:none;
+}
+
+button {
+display: inline-block;
+padding: 16px 30px;
+font-size: 18px;
+color: #fff;
+background-color: rgb(144, 210, 61);
+border-radius: 15px;
+}
