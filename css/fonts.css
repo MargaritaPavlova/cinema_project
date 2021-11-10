@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url('/fonts/IBMPlexSans-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url('/fonts/IBMPlexSans-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url('/fonts/IBMPlexSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;   
+}
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url('/fonts/IBMPlexSans-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'IBMPlexSans';
+    src: url('/fonts/IBMPlexSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 600;
+}
