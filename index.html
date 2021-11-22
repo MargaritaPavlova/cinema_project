@@ -476,24 +476,29 @@
                 <p class="header block08__header">Обратная связь</p>
                 <div class="block08__form-action">
                     <div class="block08__name">
-                        <input type="name" placeholder="Полное имя" id="fullname" required>
+                        <label class="block08__wrap">
+                            <p class="block08__wrapname">Полное имя</p>
+                            <input class="block08__input" type="name" required>
+                        </label>
+                    </div>
+                    <div class="block08__name">
+                        <label class="block08__wrap block08__filled">
+                            <p class="block08__wrapname">Полное имя</p>
+                            <input class="block08__input" type="name" required>
+                        </label>
                     </div>
                     <div class="block08__place">
                         <select class="block08__select" name="Номер места" aria-placeholder="Номер места" required>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
                         </select>
                     </div>
                     <div class="block08__reviewform">
-                        <textarea name="Напишите свой отзыв" placeholder="Напишите свой отзыв" id="feedback"></textarea>
+                        <label class="block08__wrap">
+                            <p class="block08__wrapname">Напишите свой отзыв</p>
+                            <textarea name="Напишите свой отзыв" id="feedback"></textarea>
+                        </label>
                     </div>
                     <div class="block08__submission">
                         <label class="block08__label">Я согласен на обработку своих персональных данных
@@ -502,7 +507,7 @@
                         </label>
                     </div>
                     <div class="block08__pushbutton">
-                        <button class="block08_button">
+                        <button class="block08_button" type="submit">
                             Отправить
                         </button>
                     </div>
