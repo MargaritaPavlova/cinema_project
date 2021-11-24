@@ -1,0 +1,48 @@
+@media screen and (max-width: 1200px)
+{
+    html {
+        font-size: 1.67vw;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    html {
+        font-size: 4vw;  /* значение берется с потолка. примерно увеличивается в 2-4 раза */
+    }
+    .block01__mobile-menu {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 30px;
+        background: #fff;
+        overflow: auto;
+    }
+    .block01__mobile-menu_closed {
+        transform: translateX(100%);
+    }
+    .block01__tel,
+    .block01__mail,
+    .block01__address,
+    .block01__nav a {
+        color: #555;
+        display: table;
+    }
+    .block01__mail,
+    .block01__address {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+    .block01__nav li {
+        display: table;
+    }
+    .block03__table {
+        min-width: 900px;
+    }
+    .block03__mobile-table {
+        overflow: auto;
+    }
+}
+

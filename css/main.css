@@ -32,6 +32,7 @@
 
 .block01__col1 {
     padding-right: 2.75rem;
+    max-width: 100%;
 }
 .block01__col2 {
     display: flex;
@@ -417,15 +418,16 @@
 }
 
 .block05__inner {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .block05__movie {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    flex: 0 0 33.3%;
 }
 
 .block05__shadow {
@@ -515,6 +517,8 @@
     border-radius: 0.6rem;
     box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
     overflow: hidden;
+    display: flex;
+    max-width: 15rem;
 }
 
 .block06__item img {
@@ -819,8 +823,8 @@
     position: absolute;
     content: "";
     display: inline-block;
-    height: 6px;
-    width: 15px;
+    height: 0.4rem;
+    width: 0.9rem;
     top: 4px;
     left: 5px;
     border-left: 2px solid;
