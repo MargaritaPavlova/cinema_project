@@ -51,10 +51,7 @@
   display: block;
   width: 100%;
 }
-.owl-carousel .owl-dots.disabled,
-.owl-carousel .owl-nav.disabled {
-  display: none;
-}
+
 .no-js .owl-carousel,
 .owl-carousel.owl-loaded {
   display: block;
@@ -73,14 +70,26 @@
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
   background: 0 0;
-  color: inherit;
   border: none;
-  padding: 0 !important;
   font: inherit;
   position: absolute;
-  top: 100px;
-  left: 250px;
+  color: #97B13C;
+  font-size: 2.5rem;
 }
+
+.owl-carousel .owl-nav button.owl-next {
+    position:absolute;
+    top: 3.3rem;
+    right: 16.9rem;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 3.3rem;
+    left: 16.7rem;
+}
+
+
 .owl-carousel.owl-loading {
   opacity: 0;
   display: block;
