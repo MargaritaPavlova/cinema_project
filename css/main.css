@@ -950,6 +950,26 @@
     color: #ffffff;
 }
 
+.to_top {
+    position: fixed;
+    display: none;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.75rem;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  
+.to_top svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: block;
+    fill: #fff;
+}
+
+
+
 
 
 

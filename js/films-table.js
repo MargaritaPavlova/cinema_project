@@ -38,10 +38,10 @@ const filmHelper = {
     },
     getGenres () {
         return this.genres.join(", ");
-    }
+    },
 };
 
-function renderFilmTableItem(film){
+function renderFilmTableItem(film) {
     return `
     <tr>
         <td>
@@ -62,17 +62,13 @@ function renderFilmTableItem(film){
         <td>${filmHelper.getGenres.apply(film)}</td>
     </tr>
     `
+    ;
 }
-
 
 for (let film of films) {
     if (!film.adult) {
         tbody.innerHTML += renderFilmTableItem(film);
     }
 }
-
-
-
-
 
 
