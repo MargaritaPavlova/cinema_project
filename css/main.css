@@ -869,8 +869,8 @@
 }
 
 .block09 {
-    display: block;
-    margin: 0 2.4rem 0;
+    display: flex;
+    justify-content: center;
 }
 
 .footer {
