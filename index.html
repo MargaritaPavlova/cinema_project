@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="./css/common_styles.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/prize.css">
+    <link rel="stylesheet" href="./css/feedback.form.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="./js/owl.carousel.min.js"></script>
     <script defer src="./js/script.js"></script>
     <script defer src="./js/films-table.js"></script>
+    <script defer src="./js/to_top.js"></script>
+    <script defer src="./js/popup.js"></script>
 </head>
 <body>
 <div class="block01">
@@ -223,9 +225,9 @@
                     <p class="block04__text text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas.</p>
                     <p class="block04__text text-description">Nunc vel risus commodo viverra maecenas accumsan. Morbi enim nunc faucibus a. Mauris commodo quis imperdiet massa.Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus.</p>
                     <p class="block04__text text-description">Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam non quam. Ut pharetra sit amet aliquam id diam maecenas. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Facilisi cras fermentum odio eu feugiat pretium nibh. Eu nisl nunc mi ipsum. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum.</p>
-                    <button class="block04_getgift">
+                    <a id="popup-open" class="block04_getgift">
                         Получить подарок
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -406,45 +408,42 @@
             </div>
             <div class="block08__col2">
                 <p class="header block08__header">Обратная связь</p>
-                <form class="block08__form-action">
-                    <div class="block08__name">
-                        <label class="block08__wrap">
-                            <p class="block08__wrapname">Полное имя</p>
-                            <input class="block08__input" type="name" required>
+                <div class="block08__form-action">
+                    <form action="block08__form">
+                        <div class="block08__input1 block08__input1_focused block08__input1_error">
+                            <p class="input1__label">Полное имя</p>
+                            <input type="text" name="name" class="input1__input required" value="John"/>
+                            <p class="input1__error-msg">Error message</p>
+                        </div>
+                        <div class="block08__select">
+                            <select name="" id="choose-place" class="block08__select input1-select">
+                                <option value="none" disabled selected>Номер места</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="block08__reviewform">
+                            <p class="input1__label">Напишите свой отзыв</p>
+                            <textarea name="Напишите свой отзыв" class="block08__reviewform_input1 required"></textarea>
+                        </div>
+                        <label class="block08__checkbox">
+                            <input type="checkbox" name="input1-checkbox" class="input1-checkbox"/>
+                            <span class="block08__checkbox-dot"></span>
+                            Я согласен на обработку персональных данных
                         </label>
-                    </div>
-                    <div class="block08__name">
-                        <label class="block08__wrap block08__filled">
-                            <p class="block08__wrapname">Полное имя</p>
-                            <input class="block08__input" type="name" required>
-                        </label>
-                    </div>
-                    <div class="block08__place">
-                        <select class="block08__select" name="Номер места" aria-placeholder="Номер места" required>
-                            <option value="0" selected>Номер места</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="block08__reviewform">
-                        <label class="block08__wrap">
-                            <p class="block08__wrapname">Напишите свой отзыв</p>
-                            <textarea name="Напишите свой отзыв" id="feedback"></textarea>
-                        </label>
-                    </div>
-                    <div class="block08__submission">
-                        <label class="block08__label">Я согласен на обработку своих персональных данных
-                            <input type="checkbox" id="block08__checkbox" value="Я согласен на обработку своих персональных данных">
-                            <span class="block08__span"></span>
-                        </label>
-                    </div>
-                    <div class="block08__pushbutton">
-                        <button class="block08_button" type="submit">
-                            Отправить
-                        </button>
-                    </div>
-                </form>
+                        <div class="block08__button">
+                            <button type="submit" class="block08__button-submit button2_big">Отправить</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -572,67 +571,43 @@
       </g>
     </svg>
 </div>
-<div class="popup hidden ">
+<form id="prize-popup" class="popup hidden">
     <div class="form-wrapper">
-        <div class="close">
+        <div id="popup-close" class="close">
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="17.5" cy="17.5" r="17.5" fill="#A3CC40"/>
                 <path d="M25.5363 11.8271L23.9176 10.2084L17.5 16.626L11.0824 10.2084L9.46362 11.8271L15.8812 18.2447L9.46362 24.6623L11.0824 26.2811L17.5 19.8635L23.9176 26.2811L25.5363 24.6623L19.1187 18.2447L25.5363 11.8271Z" fill="white"/>
             </svg>
         </div>
+        <div class="form-inputs">
+            <div class="st-input1 st-input1_focused st-input1_error">
+              <p class="st-input1__label">Полное имя</p>
+              <input type="text" name="name" class="st-input1__input required" value="John"/>
+              <p class="st-input1__error-msg">Error message</p>
+            </div>
+            <div class="st-input1 st-input1_focused st-input1_error">
+              <p class="st-input1__label">E-mail</p>
+              <input type="text" name="email" class="st-input1__input required" value="example@mail.com"/>
+              <p class="st-input1__error-msg">Error message</p>
+            </div>
+            <div class="input-wrap">
+                <select name="" id="choose-prize" class="input-text input-select">
+                  <option value="none" disabled selected>Выберите подарок</option>
+                  <option value="thirdTicket">Бесплатный третий билет</option>
+                  <option value="doublePop">Удвоим попкорн</option>
+                  <option value="annualSubscription">Годовой абонемент в кинотеатр</option>
+                </select>
+            </div>
+            <label class="st-checkbox">
+                <input type="checkbox" name="input-checkbox" class="input-checkbox"/>
+                <span class="st-checkbox__dot"></span>
+                Я согласен на обработку персональных данных
+            </label>
+            <div class="input-wrap">
+                <button type="submit" class="button1 button1_big">Отправить</button>
+            </div>
+        </div>
     </div>
-</div>
 </body>
 </html> 
 
-
-<!-- 
-<div class="form-inputs">
-    <div class="st-input1 st-input1_focused st-input1_error">
-      <p class="st-input1__label">Полное имя</p>
-      <input
-        type="text"
-        name="name"
-        class="st-input1__input required"
-        value="John"
-      />
-      <p class="st-input1__error-msg">Error message</p>
-    </div>
-
-    <div class="st-input1 st-input1_focused st-input1_error">
-      <p class="st-input1__label">e-mail</p>
-      <input
-        type="text"
-        name="email"
-        class="st-input1__input required"
-        value="example@mail.com"
-      />
-      <p class="st-input1__error-msg">Error message</p>
-    </div>
-
-    <div class="input-wrap">
-      <select name="" id="choose-prize" class="input-text input-select">
-        <option value="none" disabled selected>Выберите подарок</option>
-        <option value="doublePop">Удвоим попкорн</option>
-        <option value="thirdTicket">Третий билет бесплатно</option>
-      </select>
-    </div>
-
-    <label class="st-checkbox">
-      <input
-        type="checkbox"
-        name="input-checkbox"
-        class="input-checkbox"
-      />
-      <span class="st-checkbox__dot"></span>
-      Я согласен на обработку персональных данных
-    </label>
-
-    <div class="input-wrap">
-      <button type="submit" class="button1 button1_big">Отправить</button>
-    </div>
-  </div>
-</div>
-</form>
-</body>
-</html> -->

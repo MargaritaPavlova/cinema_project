@@ -13,6 +13,7 @@
     position: absolute;
     right: 22px;
     top: 22px;
+    cursor: pointer;
   }
   .form-wrapper {
     position: relative;
@@ -24,5 +25,133 @@
   }
   .form-inputs {
     padding: 80px 20px 20px;
+  } 
+  
+  .st-input1 {
+    position: relative;
+    background: #dedede;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+    transition: 0.2s;
+  }
+
+  textarea.st-input1__input {
+    height: 5rem;
+    resize: none;
+  }
+  
+   .st-input1__label {
+    position: absolute;
+    transition: 0.2s;
+    font-size: 0.75rem;
+    color: #a1a1a1;
+    top: 0.6rem;
+    z-index: 0;
+    left: 0.75rem;
+}
+   
+.st-input1:hover,
+  .st-input1_focused {
+    background: #ffffff;
+    box-shadow: 0 0 0 0.25rem rgba(170, 243, 77, 0.52);
+  }
+  
+  .st-input1_focused .st-input1__label {
+    top: -0.5rem;
+    color: #333333;
+    background: #fff;
+    padding: 0 0.25rem;
+    left: 0.5rem;
+  }
+  
+  .st-input1__input {
+    font-size: 0.75rem;
+    color: #333333;
+    position: relative;
+    padding: 0.6rem 0.75rem;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-radius: 0.25rem;
+  }  
+  .st-input1_error {
+    box-shadow: 0 0 0 0.25rem rgba(220, 60, 16, 0.5);
+  }
+  
+  .st-input1__error-msg {
+    font-size: 0.55rem;
+    position: absolute;
+    bottom: 0.1rem;
+    left: 0.75rem;
+    color: #dc3c10;
+  }
+   
+  .input-select {
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+    color: #a1a1a1;
+    padding: 0.6rem 0.75rem;
+    border-radius: 0.25rem;
+    border: 0;
+    width: 100%;
+    transition: 0.2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("/image/arrow.svg") 96% center / 5% no-repeat #dedede;
+  }
+  
+  .st-checkbox input {
+    display: none;
+  }
+  
+  .st-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #333333;
+    font-size: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .st-checkbox__dot {
+    border: 1px solid rgb(170, 243, 77);
+    border-radius: 0.2rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    flex: none;
+    margin-right: 0.3rem;
+  }
+  
+  .st-checkbox input:checked + .st-checkbox__dot {
+    background: url("../img/ico_check.svg") no-repeat center / 0.4rem 0.3rem,
+      rgb(170, 243, 77);
+  }
+
+  .button1 {
+    display: inline-block;
+    background: #90d23d;
+    color: #ffffff;
+    padding: 0.4rem 1.7rem;
+    border-radius: 0.3rem;
+    font-size: 0.7rem;
+    transition: 0.2s;
+    border: 1px solid #90d23d;
+    cursor: pointer;
+  }
+  
+  .button1:hover {
+    color: #90d23d;
+    background: #fff;
+    border: 1px solid rgba(163, 204, 64, 0.62);
+    box-shadow: 0 2px 0.45rem rgba(144, 210, 61, 0.3);
+  }
+  
+  .button1_big {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
   }
   
